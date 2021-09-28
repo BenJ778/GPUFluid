@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\assets\shader\FlameShader2D.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_Advect.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_AdvectMacCormack.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_ApplyBuoyancy.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_ApplyImpulse.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_ComputeCurl.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_ComputeDivergence.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_Fill.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_Jacobi.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_SubtractGradient.glsl" />
+    <None Include="..\..\..\assets\shader\GPUFluid_VorticityConfinement.glsl" />
+    <None Include="..\..\..\assets\shader\StreamLineShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\GraphicsLib\graphics\gl4xext\rendering\QuadShader.cpp" />
+    <ClCompile Include="..\..\..\..\GraphicsLib\graphics\gl4x\resource\GLRenderTarget.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\GLFrameBufferObject.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\GLVertexArrayObject.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\SwapTexture.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\Texture.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\shader\GLComputeShader.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\shader\GLShader.cpp" />
+    <ClCompile Include="..\..\..\external\graphics\gl4x\shader\IShader.cpp" />
+    <ClCompile Include="..\..\..\src\FlameShader2D.cpp" />
+    <ClCompile Include="..\..\..\src\FluidVolume2D.cpp" />
+    <ClCompile Include="..\..\..\src\GPUFluid2D.cpp" />
+    <ClCompile Include="..\..\..\src\GPUFluid2D_main.cpp" />
+    <ClCompile Include="..\..\..\src\StreamLineShader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\GraphicsLib\graphics\gl4xext\rendering\QuadShader.h" />
+    <ClInclude Include="..\..\..\..\GraphicsLib\graphics\gl4x\resource\GLRenderTarget.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\GLFrameBufferObject.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\GLVertexArrayObject.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\SwapTexture.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\Texture.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\shader\GLComputeShader.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\shader\GLShader.h" />
+    <ClInclude Include="..\..\..\external\graphics\gl4x\shader\IShader.h" />
+    <ClInclude Include="..\..\..\src\FlameShader2D.h" />
+    <ClInclude Include="..\..\..\src\FluidVolume2D.h" />
+    <ClInclude Include="..\..\..\src\GPUFluid2D.h" />
+    <ClInclude Include="..\..\..\src\StreamLineShader.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F1210F4-BC8E-41A8-9ECF-40D388D06362}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GPUFluid2D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>GPUFluid2D</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;FREEIMAGE_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../;../../../external;D:\Lib\AntTweakBar;D:\Lib\opengl\include;D:\Lib\freeimage\Dist\$(Platform)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Lib\opengl\lib\$(Platform);D:\Lib\AntTweakBar\lib\$(Platform);D:\Lib\freeimage\Dist\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;FREEIMAGE_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../;../../../external;D:\Lib\AntTweakBar;D:\Lib\opengl\include;D:\Lib\freeimage\Dist\$(Platform)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Lib\opengl\lib\$(Platform);D:\Lib\AntTweakBar\lib\$(Platform);D:\Lib\freeimage\Dist\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

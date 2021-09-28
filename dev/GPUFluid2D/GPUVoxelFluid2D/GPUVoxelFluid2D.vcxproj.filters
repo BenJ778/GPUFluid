@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{820140a7-f1c4-4292-9b41-217994fc9f28}</UniqueIdentifier>
+      <Extensions>glsl;glslh;hlsl;cg;cgfx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\assets\shader\FlameShader2D.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\StreamLineShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_Advect.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_AdvectMacCormack.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_ApplyBuoyancy.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_ApplyImpulse.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_ComputeCurl.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_ComputeDivergence.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_Fill.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_Jacobi.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_SubtractGradient.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\assets\shader\GPUFluid_VorticityConfinement.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\FlameShader2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\StreamLineShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\shader\GLShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\shader\IShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\shader\GLComputeShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\GLFrameBufferObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\SwapTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\external\graphics\gl4x\resource\GLVertexArrayObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\GraphicsLib\graphics\gl4xext\rendering\QuadShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\GraphicsLib\graphics\gl4x\resource\GLRenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GPUFluid2D_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GPUFluid2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\FluidVolume2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\FlameShader2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\StreamLineShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\shader\GLShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\shader\IShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\shader\GLComputeShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\GLFrameBufferObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\SwapTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\external\graphics\gl4x\resource\GLVertexArrayObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\GraphicsLib\graphics\gl4xext\rendering\QuadShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\GraphicsLib\graphics\gl4x\resource\GLRenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GPUFluid2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\FluidVolume2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
