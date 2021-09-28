@@ -1,4 +1,4 @@
 # GPUFluid
 
-![GPUFluid2D](.\media\GPUFluid2D.gif)
+![GPUFluid2D](https://github.com/masatakesato/GPUFluid/blob/main/media/GPUFluid2D.gif?raw=true)
 
