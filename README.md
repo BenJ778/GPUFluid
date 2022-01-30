@@ -24,8 +24,6 @@ ghdshgsdhgfdhgfdhgfd
 
 - MacCormack advection
 
-
-
 ## Requirements
 
 ---
@@ -33,10 +31,8 @@ ghdshgsdhgfdhgfdhgfd
 If you just want to run prebuilt application, please download from the linke below. Nothing else required.
 
 - [ ] Put linke here
-  
-  
 
-If you wat to build app from souce code, following external libraries are required.
+In order to build the application from souce code, following external libraries are required.
 
 - freeglut
 
@@ -44,19 +40,13 @@ If you wat to build app from souce code, following external libraries are requir
 
 - FreeImage
 
-- [OreOreLib]([GitHub - masatakesato/OreOreLib: Core library for C/C++ based standalone application development.](https://github.com/masatakesato/OreOreLib))
+- [OreOreLib](https://github.com/masatakesato/OreOreLib)
 
-- [GraphicsLib]([GitHub - masatakesato/GraphicsLib: Real time graphics programming...](https://github.com/masatakesato/GraphicsLib))
-
-
+- [GraphicsLib](https://github.com/masatakesato/GraphicsLib)
 
 ## Installation
 
 ---
-
-
-
-
 
 ```powershell
 git clone https://github.com/masatakesato/GPUFluid.git
