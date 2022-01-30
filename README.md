@@ -18,7 +18,7 @@ An experimental implementation of fluid interaction.
 
 ## Running application
 
-1. Download prebuilt applitation from [**here**](https://github.com/masatakesato/GPUFluid/releases/download/v0.0.1-alpha/GPUFluid-v.0.0.1-alpha.zip).
+1. Download prebuilt application from [**here**](https://github.com/masatakesato/GPUFluid/releases/download/v0.0.1-alpha/GPUFluid-v.0.0.1-alpha.zip).
 
 2. Extract zip file and execute GPUFluid2D.exe inside bin folder.
 
