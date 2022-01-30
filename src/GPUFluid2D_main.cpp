@@ -532,7 +532,7 @@ int main( int argc, char **argv )
 
 	TwAddVarRW( bar, "DensityDissipation", TW_TYPE_FLOAT, &g_DensityDissipation, " label='DensityDissipation' min=0.0 max=1.0 step=0.0001 keyIncr=z keyDecr=Z " );
 
-	TwAddVarRW( bar, "EnableMacCormackMethod", TW_TYPE_BOOLCPP, &g_bEnableMacCormackMethod, " label='Use MackCormack' keyIncr=z keyDecr=Z " );
+	TwAddVarRW( bar, "EnableMacCormackMethod", TW_TYPE_BOOLCPP, &g_bEnableMacCormackMethod, " label='Use MacCormack' keyIncr=z keyDecr=Z " );
 
 	TwAddVarRW( bar, "EnableBuoyancy", TW_TYPE_BOOLCPP, &g_bEnableBuoyancy, " label='Enable Buoyancy' keyIncr=z keyDecr=Z " );
 

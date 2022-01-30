@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GPUVoxelFluid2D", "GPUVoxelFluid2D\GPUVoxelFluid2D.vcxproj", "{2F1210F4-BC8E-41A8-9ECF-40D388D06362}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GPUFluid2D", "GPUFluid2D\GPUFluid2D.vcxproj", "{2F1210F4-BC8E-41A8-9ECF-40D388D06362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5768FB81-C8EF-497A-B355-D33EE688FC5D}
 	EndGlobalSection
 EndGlobal
