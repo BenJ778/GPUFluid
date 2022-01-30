@@ -1,7 +1,5 @@
 # GPUFluid
 
----
-
 Real-time 2D Eulerian fluid simulation using OpenGL compute shader. 
 
 ![GPUFluid2D](https://github.com/masatakesato/GPUFluid/blob/main/media/GPUFluid2D.gif?raw=true)
@@ -24,7 +22,9 @@ An experimental implementation of fluid interaction.
 
 2. Extract zip file and execute GPUFluid2D.exe inside bin folder.
 
-## Building application(under construction)
+
+
+## Building application
 
 ### Prerequisities
 
