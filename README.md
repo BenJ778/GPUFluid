@@ -20,7 +20,7 @@ An experimental implementation of fluid interaction.
 
 ## Running application
 
-1. Download prebuilt applitation from [here](https://github.com/masatakesato/GPUFluid/releases/download/v0.0.1-alpha/GPUFluid-v.0.0.1-alpha.zip).
+1. Download prebuilt applitation from [**here**](https://github.com/masatakesato/GPUFluid/releases/download/v0.0.1-alpha/GPUFluid-v.0.0.1-alpha.zip).
 
 2. Extract zip file and execute GPUFluid2D.exe inside bin folder.
 
@@ -44,6 +44,15 @@ Following system configurations are required to build application.
 
 1. Clone this repositoty.
 
-2. Download **OreOreLib** and move "oreore" folder into "external" folder.
+2. Download **[OreOreLib](https://github.com/masatakesato/OreOreLib/releases/download/untagged-1ef57314084afa42fb35/oreore.zip)** and extract to "external" folder.
 
-3. Download **GraphicsLib** and move "graphics" folder into "external" folder.
+3. Download **[GraphicsLib](https://github.com/masatakesato/GraphicsLib/releases/download/2022q1/graphics.zip)** and extract to "external" folder.
+
+4. Open VisualStudio project "dev\GPUFluid2D\GPUFluid2D\GPUFluid2D.vcxproj".
+   Then modify "**Additional Include Directory**" and "**Additional Library Directories**" settings of following libraries
+   
+   - freeglut
+   - AntTweakBar
+   - FreeImage
+
+5. Build project.
