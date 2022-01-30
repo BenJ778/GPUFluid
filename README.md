@@ -8,50 +8,42 @@ Real-time 2D Eulerian fluid simulation using OpenGL compute shader.
 
 ## About
 
----
-
-ghdshgsdhgfdhgfdhgfd
+An experimental implementation of fluid interaction. 
 
 ## Features
 
----
-
-"Stable Fluid" beased realtime fluild simulation.
-
-- Eulerian fluid simulation
+- Real-time 2D Eulerian fluid simulation based on StableFluids
 
 - Vorticity confinement
 
 - MacCormack advection
 
-## Requirements
+## Running application
 
----
+1. Download prebuilt applitation from [here](https://github.com/masatakesato/GPUFluid/releases/download/v0.0.1-alpha/GPUFluid-v.0.0.1-alpha.zip).
 
-If you just want to run prebuilt application, please download from the linke below. Nothing else required.
+2. Extract zip file and execute GPUFluid2D.exe inside bin folder.
 
-- [ ] Put linke here
+## Building application(under construction)
 
-In order to build the application from souce code, following external libraries are required.
+### Prerequisities
 
-- freeglut
+Following system configurations are required to build application.
 
-- AntTweakBar
+- Windows 10(or later) with Visual Studio Community 2017 installed
 
-- FreeImage
+- freeglut*
 
-- [OreOreLib](https://github.com/masatakesato/OreOreLib)
+- AntTweakBar* 
 
-- [GraphicsLib](https://github.com/masatakesato/GraphicsLib)
+- FreeImage* 
 
-## Installation
+* Installed under D:\Lib\ in my configuration.
 
----
+### Setup
 
-```powershell
-git clone https://github.com/masatakesato/GPUFluid.git
-```
+1. Clone this repositoty.
 
-## Usage
+2. Download **OreOreLib** and move "oreore" folder into "external" folder.
 
----
+3. Download **GraphicsLib** and move "graphics" folder into "external" folder.
