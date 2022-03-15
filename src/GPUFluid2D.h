@@ -43,6 +43,11 @@ namespace OreOreLib
 		void AddObstacles( int x, int y, float radius );
 		void RemoveObstacles( int x, int y, float radius );
 		void AddSmoke( int x, int y, float dx, float dy, float radius );
+
+		// normalized position version
+		void AddObstacles( float x, float y, float radius );
+		void RemoveObstacles( float x, float y, float radius );
+		void AddSmoke( float x, float y, float dx, float dy, float radius );
 		
 
 		Texture2D* GetCurl() const	{ return (Texture2D *)&m_Curl; }

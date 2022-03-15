@@ -273,16 +273,20 @@ void keyboardCommand()
 	//if( g_keyDown['q'] )	pCamera->Roll( -DELTA*0.1f );
 	//if( g_keyDown['e'] )	pCamera->Roll( +DELTA*0.1f );
 
+	float	x_normalized = float(g_mouseX) / float(g_ScreenWidth),
+			y_normalized = float(g_ScreenHeight-g_mouseY) / float(g_ScreenHeight);
+
+
 	if( g_MouseLeftDown /*&& (g_mouseDX != 0 || g_mouseDY != 0)*/ )
 	{
-		if( g_DrawMode==OBSTACLE )
-			g_VoxelFluid2D.AddObstacles( g_mouseX, ( g_ScreenHeight-g_mouseY ), g_ObstacleRadius );	//tcout << g_mouseX << _T(", ") << g_mouseY << tendl; //
+		if( g_DrawMode==OBSTACLE )//tcout << g_mouseX << _T(", ") << g_mouseY << tendl; //
+			g_VoxelFluid2D.AddObstacles( x_normalized, y_normalized, g_ObstacleRadius );//g_VoxelFluid2D.AddObstacles( g_mouseX, ( g_ScreenHeight-g_mouseY ), g_ObstacleRadius );
 		else
-			g_VoxelFluid2D.AddSmoke( g_mouseX, ( g_ScreenHeight-g_mouseY ), float( g_mouseDX )*2.0f, -float( g_mouseDY )*2.0f, g_SmokeRadius );
+			g_VoxelFluid2D.AddSmoke( x_normalized, y_normalized, float( g_mouseDX )*2.0f, -float( g_mouseDY )*2.0f, g_SmokeRadius );//g_VoxelFluid2D.AddSmoke( g_mouseX, ( g_ScreenHeight-g_mouseY ), float( g_mouseDX )*2.0f, -float( g_mouseDY )*2.0f, g_SmokeRadius );
 	}
 	if( g_MouseRightDown )
 	{
-		g_VoxelFluid2D.RemoveObstacles( g_mouseX, ( g_ScreenHeight-g_mouseY ), g_ObstacleRadius );	//tcout << g_mouseX << _T(", ") << g_mouseY << tendl; // 
+		g_VoxelFluid2D.RemoveObstacles( x_normalized, y_normalized, g_ObstacleRadius );	//tcout << g_mouseX << _T(", ") << g_mouseY << tendl; // 
 	}
 
 

@@ -430,6 +430,41 @@ namespace OreOreLib
 
 
 
+	// normalized position version
+	void GPUFluid2D::AddObstacles( float x, float y, float radius )
+	{
+		const Vec2f pos		= { float(m_refFluidVoxelData->Width()) * x, float(m_refFluidVoxelData->Height()) * y };
+		const Vec3f color	= { 1.0f, 0.0f, 0.0f };
+		Fill( &m_refFluidVoxelData->m_TexObstacles, pos, color, radius );
+	}
+
+
+
+	void GPUFluid2D::RemoveObstacles( float x, float y, float radius )
+	{
+		const Vec2f pos		= { float(m_refFluidVoxelData->Width()) * x, float(m_refFluidVoxelData->Height()) * y };
+		const Vec3f color	= { 0.0f, 0.0f, 0.0f };
+		Fill( &m_refFluidVoxelData->m_TexObstacles, pos, color, radius );
+	}
+
+
+
+	void GPUFluid2D::AddSmoke( float x, float y, float dx, float dy, float radius )
+	{
+		const Vec2f pos		= { float(m_refFluidVoxelData->Width()) * x, float(m_refFluidVoxelData->Height()) * y };
+		const Vec3f color	= { dx, dy, 0.0f };
+
+		//tcout << dx << ", " << dy << tendl;
+		//if( m_bEnableBuoyancy )
+			ApplyImpulse( m_refFluidVoxelData->m_TexTemperature.BackBuffer(), pos, m_ImpulseTemperature, radius );
+		ApplyImpulse( m_refFluidVoxelData->m_TexDensity.BackBuffer(), pos, m_ImpulseDensity, radius );
+		
+		
+		Fill( m_refFluidVoxelData->m_TexVelocity.BackBuffer(), pos, color, radius );
+	}
+
+
+
 
 	void GPUFluid2D::Update()
 	{
