@@ -1,8 +1,7 @@
 # GPUFluid
 
 Real-time 2D Eulerian fluid simulation using OpenGL compute shader. 
-
-![GPUFluid2D](https://github.com/masatakesato/GPUFluid/blob/main/media/GPUFluid2D.?raw=true)
+GPUFluid2D.mp4
 
 ## About
 
