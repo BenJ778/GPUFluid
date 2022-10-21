@@ -4,6 +4,8 @@ Real-time 2D Eulerian fluid simulation using OpenGL compute shader.
 
 ![GPUFluid2D](https://github.com/masatakesato/GPUFluid/blob/main/media/GPUFluid2D.gif?raw=true)
 
+![GPUFluid2D](https://github.com/masatakesato/GPUFluid/blob/main/media/GPUFluid2D.mp3?raw=true)
+
 ## About
 
 An experimental implementation of fluid interaction. 
